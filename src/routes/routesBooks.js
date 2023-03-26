@@ -88,7 +88,7 @@ router.delete('/:id', async (req, res) => {
   try {
     await Book.deleteOne({ _id: id })
 
-    res.status(200).json({ message: 'Livro removido com sucesso'})
+    res.status(200).json({ message: 'Livro removido com sucesso' })
   } catch (error) {
     res.status(500).json({ error: err })
   }
